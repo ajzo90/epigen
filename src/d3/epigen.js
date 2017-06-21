@@ -3,11 +3,11 @@ import {path} from "d3-path";
 import {mean} from "d3-array";
 import {transition} from "d3-transition";
 
-const colors = ["green", "red", "yellow", "blue"];
-const nColumns = 80;
-const nRows = 20;
-const barChartHeight = 80;
-let dx = 0, dy = 0, w, h;
+var colors = ["green", "red", "yellow", "blue"];
+var nColumns = 80;
+var nRows = 20;
+var barChartHeight = 80;
+var dx = 0, dy = 0, w = 0, h = 0;
 
 function toIndex(row, col) {
     return col + row * nColumns;
